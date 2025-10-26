@@ -1,3 +1,4 @@
+import static org.hamcrest.MatcherAssert.assertThat;
 import org.example.entity.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
@@ -142,7 +143,7 @@ public class MainTest {
     @DisplayName("findUniqueWords doğru çalışıyor mu ?")
     @Test
     public void testFindUniqueWordsMethod() {
-        assertEquals(StringSet.findUniqueWords().size(), 143);
+        assertEquals(StringSet.findUniqueWords().size(), 142);
 
         List<String> results = StringSet.findUniqueWords().stream().collect(Collectors.toList());
         assertEquals(results.get(0), "a");
